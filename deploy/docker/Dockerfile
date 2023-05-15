@@ -19,6 +19,7 @@ FROM alpine:3.16 as deps-stage
 COPY . /
 WORKDIR /
 RUN ls -al
+RUN ls -al dist/
 RUN tar zxvf dist/apache-streampark_*-*-bin.tar.gz \
 && mv apache-streampark_*-*-bin streampark
 
