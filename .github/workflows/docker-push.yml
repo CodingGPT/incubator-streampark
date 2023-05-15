@@ -23,7 +23,6 @@ on:
       - release-*
     tags:
       - v2.1.0
-
 concurrency:
   group: ${{ github.workflow }}-${{ github.ref }}
   cancel-in-progress: true
