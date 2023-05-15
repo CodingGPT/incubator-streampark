@@ -22,7 +22,7 @@ on:
     branches:
       - release-*
     tags:
-      - v2.1.0
+      - v*
 
 concurrency:
   group: ${{ github.workflow }}-${{ github.ref }}
