@@ -18,12 +18,11 @@
 name: "Build Docker Image"
 
 on:
-  schedule:
-    - cron: '0 10 * * *'
   push:
     branches:
       - dev
       - release-*
+      - v-dev-test
     tags:
       - v*
 
