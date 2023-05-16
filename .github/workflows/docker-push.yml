@@ -20,7 +20,7 @@ name: "Build Docker Image"
 on:
   push:
     branches:
-      - release-*
+      - v2*
     tags:
       - v*
 
