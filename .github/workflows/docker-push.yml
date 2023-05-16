@@ -33,7 +33,6 @@ concurrency:
 jobs:
   build_image:
     runs-on: ubuntu-latest
-    if: ${{ github.repository == 'apache/incubator-streampark' }}
     steps:
       - name: Check out the repo
         uses: actions/checkout@v3
@@ -69,7 +68,7 @@ jobs:
         id: meta
         uses: docker/metadata-action@v4
         with:
-          images: apache/streampark
+          images: delik8shub/streampark
           tags: |
             type=raw,value=latest,enable={{is_default_branch}}
             type=ref,event=tag
