@@ -20,7 +20,7 @@ COPY . /
 WORKDIR /
 RUN ls -al dist/
 RUN tar zxvf dist/apache-streampark_*-*-bin.tar.gz \
-&& mv apache-streampark_*-*-bin streampark
+&& mv apache-streampark*-*-bin streampark
 
 FROM docker:dind
 WORKDIR /streampark
